@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+
+body{
+	margin:0px;
+	font-family: 'Josefin Sans', sans-serif;
+	padding-left: 0px;
+}
+*{
+	box-sizing: border-box;
+	margin: 0px;
+	padding-left: 0px;
+	overflow-x: hidden;
+	/*padding: cover;*/
+}
+
+.container{
+	width: 0%;
+	margin:0px;
+	padding-top: 3px;
+}
+div.container{
+	width: 100%;
+	height: 100%;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+/*header*/
+header{
+	background-color: gray;
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	border-bottom: 1px solid #900C3F;
+	padding: 0px 15px;
+	z-index: 10;
+}
+header .row{
+	justify-content: space-between;
+	align-items: center;	
+}
+header .brand-name a{
+	text-decoration: none;
+	font-size: 22px;
+	font-weight: 600;
+	color: #ffffff;
+	text-transform: uppercase;
+	position: relative;
+
+}
+
+
+/*.topnav{
+	background-color: grey;
+	overflow: hidden;
+	
+}
+.topnav a{
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+.topnav a:hover{
+	background-color: transparent;
+	color: black;
+}
+.topnav a.active{
+	background-color:black;
+	color: white;
+}
+.topnav .icon{
+	display: none;
+}*/
+/*Home section*/
+.home{
+	min-height: 100vh;
+	background-image: url("abc.jpg");
+	background-size: cover;
+    background-position: center;
+}
+.home .full-screen{
+	
+	min-height: 100vh;
+	
+}
+.home .home-content{
+	
+	flex: 0 0 100%;
+	max-width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.home .home-content .block{
+	
+	flex: 0 0 75%;
+	max-width: 75%;
+	padding-left: 35px;
+	border-left: 5px solid black;
+	margin-top: 50px;
+}
+.home .home-content .block h6{
+	font-size: 18px;
+	font-weight: 500;
+	margin: 0;
+	padding: 0;
+
+}
+}
+.home .home-content .block h1{
+	font-size: 70px;
+	font-weight:600;
+	margin: 0 0 10px;
+	padding: 0;
+	
+}
+.home .home-content .block h3{
+	font-size: 25px;
+	font-weight:500;
+	margin: 0 0 10px;
+	padding: 0;
+}
+.home .home-content .block .cv-btn{
+	padding-top: 20px;
+}
+
+.home .home-content .block .cv-btn a{
+	border-radius: 4px;
+	color: black;
+	border:1px solid black;
+	padding:12px 25px;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: 600;
+	transition: all .5s ease;
+	background-color: transparent;
+}
+.home .home-content .block .cv-btn a:hover{
+	background-color: white;
+}
+/*About me*/
+.about-me{
+	background-color: #f5f8fd;
+	padding: 100px 0px 70px;
+	flex:0 0 calc(33.33% -20 px);
+	max-width: calc(33.33% -20px);
+	margin: cover;
+
+}
+
+
+.about-me .section-title h1:before{
+	left: 30%;
+}
+.small{
+	font-size: 25px;
+	font-weight: 400px;
+}
+
+.about-me  .social-links{
+	
+	padding-top: 30px;
+
+
+
+}
+.about-me  .social-links a{
+	height: 30px;
+	width: 30px;
+	background-color: #000000;
+	color: white;
+	border-radius: 3px;
+	display: inline-block;
+	border:1px solid #000000;
+	line-height: 28px;
+	text-align: center;
+	margin: 0 1px;
+	-webkit-transition:all .5s ease;
+	transition: all .5s ease;
+}
+.about-me  .social-links a:hover{
+	background-color: #900C3F;
+}
+.about-me  .social-links a.fa{
+	color: #ffffff;
+	font-size: 12px;
+}
+/*projects*/
+.projects{
+	background-color: #f5f8fd;
+	padding: 100px 0px 70px;
+}
+.projects .section-title h1:before{
+	left: 30%;
+}
+.section-title{
+	flex:0 0 100%;
+	max-width: 100%;
+	margin-bottom: 40px;
+}
+
+ .section-title h1{
+		display: inline-block;
+		font-size: 35px;
+		text-transform: uppercase;
+		font-weight: 700px;
+		margin: 0 0 10px;
+		position: relative;
+		
+}
+
+ .section-title h1:before{
+	content: '';
+	left: 0;
+	position: absolute;
+	height:2px;
+	right: 30%;
+
+	background-color: #febd01;
+	bottom: 0px;
+}
+.text-center{
+	text-align: center!important;
+}
+.text-left{
+	text-align: left!important;
+}
+.text-right{
+	text-align: right!important;
+}
+.projects .projects-content{
+	
+	flex: 0 0 100%;
+	max-width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.projects .projects-content .box{
+	background-color: #ffffff;
+	padding: 30px;
+	flex: 0 0 calc(33.33% -20px);
+	max-width: calc(33.33% -20px);
+	margin: cover;
+	margin-bottom: 30px;
+	border:1px solid #eeeeee;
+	text-align: center;
+}
+.projects .projects-content .box .icon{
+    height: 60px;
+    width: 60px;
+    background-color: #febd01;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 3px;
+    overflow-y: hidden;
+}
+.projects .projects-content .box h5{
+	font-size: 16px;
+	font-weight: 600;
+	color: #000000;
+	margin: 0;
+}
+
+.projects .projects-content .box .icon .fa{
+	font-size: 25px;
+	color: white;
+	line-height: 60px;
+}
+/*certihication*/
+.certification{
+	background-color: #f5f8fd;
+	padding: 100px 0px 70px;
+}
+.certification .section-title h1:before{
+	left: 30%;
+	
+
+}
+.certification .certification-content{
+	
+	flex: 0 0 100%;
+	max-width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.certification .certification-content .box{
+	background-color: #ffffff;
+	padding: 30px;
+	width: 2000px;
+	height: 150px;
+	margin: cover;
+	margin-bottom: 30px;
+	border:1px solid #eeeeee;
+	text-align:center;
+	}
+/*contact*/
+.contact-us{
+	background-color: #f5f8fd;
+	padding: 100px 0px 70px;
+}
+.contact-us .section-title h1:before{
+	left: 30%;
+	text-align: center;
+}
+.contact-us .contact-us-content{
+	
+	flex: 0 0 100%;
+	max-width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.contact-us .contact-us-content .box{
+	background-color: #ffffff;
+	padding: 25px;
+	flex: wrap;
+	width: 2000px;
+	height: 150px;
+	margin-bottom: 30px;
+	border:1px solid #eeeeee;
+	text-align:left;
+	}
+/*footer*/
+footer{
+	padding: 80px 15px;
+	background-color: #0c0c17;
+}	
+footer .logo{
+	
+	flex: 0 0 100%;
+	max-width: 100%;
+	text-align: center;
+	font-size: 45px;
+	color: #ffffff;
+	font-weight: 900;
+}
+footer .social{
+	flex:0 0 100%;
+	max-width: 100%;
+	text-align: center;
+	padding-top: 15px;
+}
+footer .social a{
+	color: #999999;
+	text-decoration: none;
+	display: inline-block;
+	margin:0 px 12px;
+	transition: all .5s ease;
+	text-decoration: none;
+	justify-content: space-between;
+}
+footer .social a:hover{
+	color: #ffffff;
+
+}
+@media only screen and(min-width: 378px){
+	.container{
+	width: 100%;
+	margin:0px;
+	padding-top: 3px;
+}
+div.container{
+	width: 100%;
+	height: 100%;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+}
+
+
